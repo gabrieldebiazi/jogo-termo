@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.cabecalho button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cabecalho img {
+    width: 24px;
+    height: 24px;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.tabuleiro {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 30px;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7px;
+}
+
+.celula {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.celula:hover {
+    border-color: #666;
+}
+
+.correta {
+    background-color: #3aa394; /* Tom de verde semelhante ao jogo */
+    color: white;
+    border-color: #3aa394;
+}
+
+.existe {
+    background-color: #d3ad69; /* Tom de amarelo */
+    color: white;
+    border-color: #d3ad69;
+}
+
+.incorreta {
+    background-color: #312a2c; /* Cinza escuro */
+    color: white;
+    border-color: #312a2c;
+}
+
+.correta:hover, .existe:hover, .incorreta:hover {
+    border-color: #000;
+}
+
+.teclado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.linha-teclado1, .linha-teclado2, .linha-teclado3 {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+
+.teclado button {
+    height: 50px;
+    min-width: 30px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: #dce1ed;
+    color: #333;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.1s;
+}
+
+.teclado button:hover {
+    background-color: #babbc1;
+}
+
+.teclado button.ENTER, .teclado button.APAGAR {
+    min-width: 60px;
+    font-size: 12px;
+}
+
+.teclado button img {
+    width: 20px;
+    height: 20px;
+}
